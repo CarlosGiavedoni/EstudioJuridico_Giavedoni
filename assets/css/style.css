@@ -1,0 +1,182 @@
+* {
+    font-family:  'Roboto', sans-serif;
+}
+
+header{
+    background-color: rgb(54, 40, 40);
+    height: 200px;
+    width: 100%;
+ 
+}
+
+.conteinerNavegador {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo {
+    float: left;
+
+}
+
+li {
+
+    display: inline;
+    text-align: center;
+    margin-right: 45px;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+footer{
+    background-color: rgb(54, 40, 40);
+}
+
+.socialMedia{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+.socialMedia a{
+    margin-right: 45px;
+}
+
+.imgRedes {
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.containerTexto {
+    width: 500px;
+    margin-left: 30px;
+}
+
+
+p{
+    font-size:20px;
+    text-align:justify;
+    
+}
+
+.containerVideo{
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; }
+  
+#check {
+    display: none; }
+
+.grid-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 0.5fr 1.7fr 0.8fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Imagen NombreYRol"
+        "Imagen experienciaPersonal"
+        "contactoPersonal contactoPersonal";
+    }
+    
+    .Imagen { grid-area: Imagen; }
+    
+    .NombreYRol { grid-area: NombreYRol; }
+    
+    .experienciaPersonal { grid-area: experienciaPersonal; }
+    
+    .contactoPersonal { grid-area: contactoPersonal; }
+
+.Imagen{
+    margin-left: 25px;
+}
+
+.contactoPersonal {
+    margin-left: 25px;
+}
+
+.experienciaPersonal {
+    width: 80%;
+}
+      
+
+
+@media only screen and (max-width: 1030px) {
+    .checkbtn {
+        display: block; }
+    .navegador {
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background-color: rgb(54, 40, 40);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: block; }
+
+    .navegadorLista {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px; }
+
+    #check:checked ~ .navegador {
+        left: 0; }
+
+    .container {
+        display: block
+    }
+
+    .containerVideo {
+        margin-left: 5px;
+    }
+
+    .grid-container {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2.2fr 0.5fr 1fr 0.8fr;
+        gap: 10px 0px;
+        grid-template-areas:
+            "Imagen"
+            "NombreYRol"
+            "experienciaPersonal"
+            "contactoPersonal";
+        }
+    
+    .Imagen {
+        margin-left: 100px;
+    }
+    .NombreYRol {
+        margin-left: 100px;
+    }
+    .experienciaPersonal {
+        margin-left: 100px;
+    }
+    .contactoPersonal {
+        margin-left: 100px;
+    }
+
+}

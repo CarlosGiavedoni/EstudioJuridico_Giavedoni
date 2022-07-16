@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>CG - Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="conteinerNavegador">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>                
+            </label>
+
+            <a class="logo" href="../index.html">
+                <img src="../assets/img/CG ESTUDIO JURÍDICO LOGO.png" alt="">
+            </a>
+       
+            <ul class="navegador">
+                <li class="navegadorLista"><a href="./areas_de_practica.html">Áreas de práctica</a></li>
+                <li class="navegadorLista"><a href="./equipo.html">Equipo</a></li>
+                <li class="navegadorLista"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="navegadorLista"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1> Contacto </h1>
+    <p>Complete sus datos personales y envíenos su consulta.</p>
+    <form action=""></form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+        <br>
+        <br>
+        <label for="nombre">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+        <br>
+        <br>
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required>
+        <br>
+        <br>
+        <label for="num">Teléfono</label>
+        <input type="number" name="num" id="num" placeholder="Ingresa tu teléfono" required>
+        <br>
+        <br>
+    </fieldset>
+    <br><br>
+    <label for="comentario">Consulta</label>
+    <br><br>
+    <textarea name="consulta" id="consulta" cols="40" rows="10" maxlength="10"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Enviar el formulario">
+    <input type="reset" value="Limpiar formulario">
+    </main>
+    <footer>
+        <div class="socialMedia">
+            <a href="https://es-la.facebook.com/" target="_blank" class="fa fa-facebook icono">
+                <img class="imgRedes" src="../assets/img/Facebook-symbol.jpeg" alt="" width="50px">
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter icono">
+                <img class="imgRedes" src="../assets/img/Twitter-symbol.jpeg" alt="" width="50px">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram icono" id="instagram">
+                <img class="imgRedes" src="../assets/img/Instagram-symbol.jpeg" alt="" width="50px">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
