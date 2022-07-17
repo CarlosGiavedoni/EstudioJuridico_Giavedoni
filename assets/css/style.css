@@ -2,7 +2,7 @@
     font-family:  'Roboto', sans-serif;
 }
 
-header{
+header {
     background-color: rgb(54, 40, 40);
     height: 200px;
     width: 100%;
@@ -20,6 +20,10 @@ header{
 
 }
 
+.transition {
+    animation: defaultEaseIn 4s;
+}
+
 li {
 
     display: inline;
@@ -33,6 +37,10 @@ a{
     text-decoration: none;
     font-size: 25px;
 
+}
+
+.navegadorLista:hover {
+    text-decoration: underline;
 }
 
 footer{
@@ -121,7 +129,10 @@ p{
     width: 80%;
 }
       
-
+a:hover {
+    color:#b8b4b2;
+    transition: .2s;
+}
 
 @media only screen and (max-width: 1030px) {
     .checkbtn {
@@ -140,7 +151,9 @@ p{
     .navegadorLista {
         display: block;
         margin: 50px 0;
-        line-height: 30px; }
+        line-height: 30px; 
+    }
+
 
     #check:checked ~ .navegador {
         left: 0; }
@@ -179,4 +192,9 @@ p{
         margin-left: 100px;
     }
 
+}
+
+@keyframes defaultEaseIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
 }
